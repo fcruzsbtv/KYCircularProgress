@@ -226,6 +226,21 @@ public class KYCircularProgress: UIView {
         }
         gradientLayer.colors = convertedColors
     }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        self.progressView.frame = self.frame
+        self.gradientLayer.frame = self.frame
+        
+        self.progressGuideView?.frame = self.frame
+        self.guideLayer?.frame = self.frame
+        
+        
+        self.progressView.recalculatePath()
+        self.progressGuideView?.recalculatePath()
+        
+        self.setNeedsDisplay()
+    }
 }
 
 // MARK: - KYCircularShapeView
@@ -250,8 +265,19 @@ class KYCircularShapeView: UIView {
         updateProgress(0)
     }
     
+    func recalculatePath() {
+        
+        if startAngle == endAngle {
+            endAngle = startAngle + (M_PI * 2)
+        }
+        
+        shapeLayer.path = layoutPath().CGPath
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        
         
         if startAngle == endAngle {
             endAngle = startAngle + (M_PI * 2)
@@ -261,6 +287,7 @@ class KYCircularShapeView: UIView {
     
     private func layoutPath() -> UIBezierPath {
         let halfWidth = CGFloat(CGRectGetWidth(frame) / 2.0)
+        
         return UIBezierPath(arcCenter: CGPointMake(halfWidth, halfWidth), radius: halfWidth - shapeLayer.lineWidth, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: true)
     }
     
@@ -270,6 +297,8 @@ class KYCircularShapeView: UIView {
         shapeLayer.strokeEnd = CGFloat(progress)
         CATransaction.commit()
     }
+    
+    
 }
 
 // MARK: - UIColor Extension

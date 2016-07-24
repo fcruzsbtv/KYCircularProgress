@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D82C44F92D0120E1E4B2C17A644E3BCF241FCFC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D82C44F92D0120E1E4B2C17A644E3BCF241FCFC0" : 0,
+    "19B52C757CC85D194BCA29DA1BCF4AA32634CC81" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75F42968-A23B-46CB-8822-0740184F8E87",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D82C44F92D0120E1E4B2C17A644E3BCF241FCFC0" : "KYCircularProgress\/",
+    "19B52C757CC85D194BCA29DA1BCF4AA32634CC81" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iOS Example",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS Example.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:smartbox_way\/fx-core-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19B52C757CC85D194BCA29DA1BCF4AA32634CC81"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kentya6\/KYCircularProgress.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D82C44F92D0120E1E4B2C17A644E3BCF241FCFC0"
+    }
+  ]
+}
